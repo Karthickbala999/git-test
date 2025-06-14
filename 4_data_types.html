@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring the Various Data Types in JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    h2 {
+      color: #555;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 15px 0;
+    }
+
+    code {
+      background-color: #f4f4f4;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .section {
+      margin: 30px 0;
+    }
+
+    ul {
+      margin: 10px 0 20px 20px;
+    }
+
+    .output {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exploring the Various Data Types in JavaScript</h1>
+
+  <div class="section">
+    <h2>Introduction</h2>
+    <p>Data types in JavaScript describe the different types or kinds of data that you will be working with and storing in variables. It's important to learn each of these data types because otherwise, data can get stored in an improper format, leading to issues in your code later on.</p>
+    <p>In JavaScript, data types are used to classify different types of data and define the type of values that a variable can hold. The main data types in JavaScript include:</p>
+  </div>
+
+  <div class="section">
+    <h2>Primitive Data Types</h2>
+    <ul>
+      <li><strong>String:</strong> A string is a collection of alphanumeric characters.</li>
+      <li><strong>Number:</strong> Numbers are for numbers. We can't put a letter here.</li>
+      <li><strong>Boolean:</strong> Booleans have two values: true and false.</li>
+      <li><strong>Null and Undefined:</strong> Null and undefined stand for empty, meaning they have no value assigned to them.</li>
+      <li><strong>Symbols:</strong> Symbol is a primitive data type. Once you create a symbol, its value is kept private and for internal use.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Other Data Types</h2>
+    <ul>
+      <li><strong>Array:</strong> An array is a type of object used for storing multiple values in a single variable.</li>
+      <li><strong>Object Literals:</strong> It is a comma-separated list of name-value pairs wrapped in curly braces.</li>
+      <li><strong>Date:</strong> JavaScript doesn't have a native date data type, but you can use the Date object and its methods to work with dates and times.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Dynamic Typing in JavaScript</h2>
+    <p>JavaScript is a loosely typed language, meaning that the data type of a variable does not have to be explicitly declared. Instead, JavaScript automatically determines the data type of a variable based on the value assigned to it. However, it's a good practice to be aware of the data types as you work with variables and write your code.</p>
+  </div>
+
+  <div class="section">
+    <h2>JavaScript Data Types Example</h2>
+    <p>Here is a basic example of how different data types can be used in JavaScript:</p>
+    <pre><code>
+var a = 25.5;
+var fname = "Hari Krishnan";
+var isMarried = false;
+var phone = null;
+let b;
+
+console.log(typeof b);
+
+// ES6 2015 - Symbols
+const s1 = Symbol();
+console.log(s1);
+
+const s2 = Symbol();
+console.log(s2);
+
+console.log(s1 == s2); // Symbols are unique, so this will be false
+
+// Arrays and Objects
+var courses = ['Html', 'CSS', 'JavaScript'];
+var student = {
+  'name': 'Hari Krishnan',
+  'age': 28
+};
+
+// Date object
+var d = new Date();
+console.log(d); // Outputs the current date and time
+console.log(typeof d); // 'object' because Date is an object
+    </code></pre>
+  </div>
+
+  <div class="output">
+    <h3>Expected Output:</h3>
+    <pre><code>
+undefined
+Symbol()
+Symbol()
+false
+[ 'Html', 'CSS', 'JavaScript' ]
+{ name: 'Hari Krishnan', age: 28 }
+current date and time
+object
+    </code></pre>
+  </div>
+
+  <script src="data_type.js"></script>
+</body>
+</html>
